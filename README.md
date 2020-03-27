@@ -1,7 +1,7 @@
 # ParticlesApp
  Render animated particles using UWP Canvas
 
-Source code for blog article:
+Source code for blog articles:
 
 * http://vmcodes.net/rendering-animated-particles-with-uwp-canvas/
 
