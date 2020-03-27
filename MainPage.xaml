@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="ParticlesApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ParticlesApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas x:Name="canvas" HorizontalAlignment="Center" Height="720" 
+                VerticalAlignment="Center" Width="1280" Background="#FF060A16"/>
+    </Grid>
+</Page>
