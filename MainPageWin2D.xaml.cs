@@ -87,7 +87,7 @@ namespace ParticlesApp
                 particles[i].newLeft += particles[i].hDir;
 
                 // If outside the bounds, then invert the direction of motion.
-                if (particles[i].newLeft <= 0)
+                if (particles[i].newLeft - radius <= 0)
                 {
                     particles[i].hDir = 1;
                 }
@@ -100,7 +100,7 @@ namespace ParticlesApp
                 particles[i].newTop += particles[i].vDir;
 
                 // If outside the bounds, then invert the direction of motion.
-                if (particles[i].newTop <= 0)
+                if (particles[i].newTop - radius <= 0)
                 {
                     particles[i].vDir = 1;
                 }
