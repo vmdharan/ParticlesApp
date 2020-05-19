@@ -140,8 +140,11 @@ namespace ParticlesApp
                 particles[i].newTop = rand.Next(0, hComponent);
                 particles[i].col1 = scb[rand.Next(0, 9)];
 
-                particles[i].hDir = rand.Next(1, 2) * -1;
-                particles[i].vDir = rand.Next(1, 2) * -1;
+                //particles[i].hDir = rand.Next(1, 2) * -1;
+                //particles[i].vDir = rand.Next(1, 2) * -1;
+
+                particles[i].hDir = rand.Next(0, 2) == 0 ? -1 : 1;
+                particles[i].vDir = rand.Next(0, 2) == 0 ? -1 : 1;
             }
         }
     }
