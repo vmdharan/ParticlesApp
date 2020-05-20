@@ -136,5 +136,10 @@ namespace ParticlesApp
                 Canvas.SetTop(particles[i].ellipse, particles[i].newTop);
             }
         }
+
+        private void MainPage_Unloaded(object sender, RoutedEventArgs e)
+        {
+            CompositionTarget.Rendering -= CompositionTarget_Rendering;
+        }
     }
 }

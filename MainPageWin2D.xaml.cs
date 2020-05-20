@@ -147,5 +147,11 @@ namespace ParticlesApp
                 particles[i].vDir = rand.Next(0, 2) == 0 ? -1 : 1;
             }
         }
+
+        private void MainPageWin2D_Unloaded(object sender, RoutedEventArgs e)
+        {
+            this.canvasWin2d.RemoveFromVisualTree();
+            this.canvasWin2d = null;
+        }
     }
 }
